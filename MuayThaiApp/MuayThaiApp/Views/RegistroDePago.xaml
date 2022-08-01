@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MuayThaiApp.Views.RegistroDePago">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="Pagos de clases" />
+                <Label Text="Id" />
+                <Entry x:Name="txtPagoId"
+                       Placeholder="0"
+                       IsEnabled="False" />
+                <Label Text="Fecha de págo" />
+                <Entry x:Name="txtFechaPago"
+                       Placeholder="Ingrese Fecha" />
+                <Label Text="Método de págo Id" />
+                <Entry x:Name="txtMetodoPagoId"
+                       Placeholder="Ingrese metodo de pago" />
+                <Label Text="Evidencia" />
+                <Entry x:Name="txtEvidencia"
+                       Placeholder="Suba archivo" />
+                <Button Text="Guardar"
+                        Clicked="Button_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

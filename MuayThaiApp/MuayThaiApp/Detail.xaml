@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MuayThaiApp.Detail">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#203B8C"
+                     Spacing="0">
+            <Label Text="C.A.R. Muay Thai"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   Margin="20,0,20,0"
+                   Padding="0"
+                   TextColor="Azure"
+                   HorizontalOptions="Center" />
+            <Label Text="Seguimiento"
+                   FontSize="25"
+                   FontAttributes="Bold"
+                   Padding="0"
+                   Margin="20,0,20,0"
+                   TextColor="Azure"
+                   HorizontalOptions="Center" />
+            <Frame VerticalOptions="FillAndExpand"
+                   Margin="20,0,20,20"
+                   CornerRadius="20"
+                   HasShadow="False"
+                   BackgroundColor="Black">
+                <StackLayout VerticalOptions="Center"
+                             Spacing="20">
+                    <Image  Source="car_muay_thai_black_logo.jpg" />
+                    <Label HorizontalOptions="Center"
+                           TextColor="Azure">Revisión de pagos y asistencia de clases</Label>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

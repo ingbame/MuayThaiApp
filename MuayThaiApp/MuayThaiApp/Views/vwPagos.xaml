@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MuayThaiApp.Views.vwPagos">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="lstPagos">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding PagosId}"
+                                       Grid.Row="0"
+                                       Grid.Column="0"
+                                       TextColor="blue" />
+                                <Label Text="{Binding FechaPago}"
+                                       Grid.Row="0"
+                                       Grid.Column="1"
+                                       TextColor="blue" />
+                                <Label Text="{Binding MetodoPagoId}"
+                                       Grid.Row="0"
+                                       Grid.Column="2"
+                                       TextColor="blue" />
+                                <Label Text="{Binding Evidencia}"
+                                       Grid.Row="0"
+                                       Grid.Column="3"
+                                       TextColor="blue" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
